@@ -1,0 +1,16 @@
+{
+  "name": "pi-local-qwen-amd",
+  "version": "0.1.0",
+  "description": "Pi extension that auto-starts a local llama.cpp Qwen3.5-9B MTP server on AMD Vulkan GPUs when selected.",
+  "type": "module",
+  "keywords": ["pi-package", "pi-extension", "llama.cpp", "qwen", "local-llm", "amd", "vulkan"],
+  "license": "MIT",
+  "bin": {
+    "pi-local-qwen-amd-install": "./scripts/install.sh",
+    "pi-local-qwen-amd-server": "./scripts/server.sh"
+  },
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "files": ["src", "scripts", "README.md", "LICENSE"]
+}
